@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: rgb(37, 37, 45);
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	transition: all ease 0.45s;
+}
+
+.title {
+	color: #ffffff;
+	text-align: center;
+	margin-top: 2.5vw;
+	font-size: 3vw;
+}
+
+.title {
+	-webkit-text-stroke: 0.2vw #ffffff;
+	-webkit-text-fill-color: #ffffff;
+}
+
+.title label {
+	-webkit-text-stroke: 0.1vw #ffffff;
+	-webkit-text-fill-color: transparent;
+}
+
+hr {
+	width: 20vw;
+	margin-left: 46.5vw;
+	margin-top: 0.5vw;
+}
+
+.clock {
+	margin-top: 5vw;
+	background-color: rgb(37, 37, 45);
+	border: 0.25vw solid rgb(48, 48, 59);
+	width: 40vw;
+	height: 20vw;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1vw;
+	animation-name: boom;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+#time {
+	margin-top: 2.5vw;
+	font-size: 6vw;
+	text-align: center;
+	background: -webkit-linear-gradient(0deg, rgb(255, 100, 61), rgb(187, 61, 255));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 400;
+}
+
+#setting {
+	position: absolute;
+	margin-top: 3.5vw;
+	margin-left: 26vw;
+	font-size: 1.5vw;
+	color: rgb(139, 249, 146);
+	font-weight: 500;
+}
+
+#date {
+	margin-top: 1vw;
+	text-align: center;
+	font-size: 2.5vw;
+	font-weight: 500;
+	background: -webkit-linear-gradient(0deg, rgb(64, 123, 242), rgb(112, 255, 122));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes boom {
+	from {
+		box-shadow: 0vw 0vw 5vw 0.1vw rgba(187, 61, 255, 0.5);
+	}
+
+	to {
+		box-shadow: 0vw 0vw 5vw 1vw rgba(61, 135, 255, 0.5);
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" lang="eng">
+	<meta name="viewport" content="width=device-width">
+	<title>Meme Generator</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<h1 class="title">Meme Generator</h1>
+    <div class="con">
+        <div class="user-con">
+			<div id="image">
+				<div class="abovetext-con">
+					<p id="abovetext">Label 1</p>
+				</div>
+				<div class="belowtext-con">
+					<p id="belowtext">Label 2</p>
+				</div>
+			</div>
+			<span class="input-con">
+				<input type="url" placeholder="Enter Image URL" id="image-url" />
+				<span class="sub-input-con">
+					<input type="text" placeholder="Enter Above Text" id="text1" />
+					<input type="text" placeholder="#FFFFFF" id="colour1"/>
+					<input type="text" placeholder="Enter Below Text" id="text2" />
+					<input type="text" placeholder="#FFFFFF" id="colour2" />
+					<button id="generate">Generate</button>
+				</span>
+			</span>
+		</div>
+        <div class="result-con">
+			<h6 class="sub-title">Result</h6>
+			<div id="result-image">
+				<div class="abovetext-con">
+					<p id="resultabovetext">Label 1</p>
+				</div>
+				<div class="belowtext-con">
+					<p id="resultbelowtext">Label 2</p>
+				</div>
+			</div>
+		</div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>

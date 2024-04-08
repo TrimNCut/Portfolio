@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur1"></div>
+    <div class="container">
+        <h1>Proceed To <span class="con-intext">Payment</span></h1>
+        <form action="post">
+            <input class="con-form-cardnum con-form-details" type="text" placeholder="0000 0000 0000 0000" required>
+            <input class="con-form-cardname  con-form-details" type="text" placeholder="CARD NAME" required>
+            <span>
+                <input class="con-form-sp-cardexp  con-form-details" type="date" required>
+                <input class="con-form-sp-cardcvv  con-form-details" type="text" placeholder="CVV" required>
+            </span>
+            <input class="con-form-email  con-form-details" type="email" placeholder="examlple@example.com" required>
+            <div>
+                <label class="con-form-div-total">Total : <span>$9.99</span></label>
+                <button class="con-form-div-btn" type="submit">Proceed</button>
+            </div>
+        </form>
+    </div>
+    <div class="blur2"></div>
+</body>
+</html>

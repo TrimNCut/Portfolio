@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #f0f8ff;
+	overflow-x: hidden;
+	transition: all ease 0.4s;
+}
+
+.feed {
+	font-family: 'Marck Script';
+	color: #000000;
+	font-weight: 500;
+	font-size: 4vw;
+    margin-top: -1vw;
+	text-align: center;
+	margin-left: 37vw;
+	position: absolute;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	color: #FFA500;
+	font-weight: 500;
+	font-size: 2vw;
+	text-align: center;
+	margin-top: 3vw;
+}
+
+.head-hr {
+	width: 15vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5vw;
+	background-color: #0099FF;
+	height: 0.15vw;
+	border-radius: 1vw;
+	border: none;
+}
+
+.types-con {
+	margin-left: 33vw;
+	padding-top: 2vw;
+	margin-top: 1vw;
+	padding-bottom: 4vw;
+	height: 2vw;
+}
+
+.types {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1vw;
+	margin-right: 1.5vw;
+	cursor: pointer;
+	transition: all ease 0.4s;
+	line-height: 2vw;
+	vertical-align: middle;
+	background-color: #ced9e3;
+	padding: 0.5vw 1vw 0.5vw 1vw;
+	border: none;
+	border-radius: 0.5vw;
+}
+
+.types:hover {
+	font-size: 1.2vw;
+	margin-right: 1.4vw;
+}
+
+#items {
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	margin-left: 15vw;
+	margin-right: 30vw;
+	display: grid;
+	gap: 3vw 3vw;
+	grid-template-columns: auto auto auto auto;
+}
+
+.item-con {
+	width: 15vw;
+	background-color: #ffffff;
+	height: 15vw;
+	border-radius: 1vw;
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+
+.item-con-info {
+	position: absolute;
+	opacity: 0;
+	transition: all ease 0.4s;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-left: -12.5vw;
+	border-radius: 1vw;
+	width: 15vw;
+	height: 10vw;
+	padding-top: 5vw;
+	text-align: center;
+}
+
+.item-con:hover {
+	opacity: 0.8;
+}
+
+.item-con:hover .item-con-info {
+	opacity: 1;
+}
+
+.item-name {
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5vw;
+}
+
+.item-price {
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.item-price-sign {
+	font-size: 2vw;
+}
+
+.item-price-rem {
+	font-size: 1vw;
+}
+
+.item-con img {
+	width: 10vw;
+	height: 10vw;
+	margin-top: 2.25vw;
+	margin-left: 2.5vw;
+	border-radius: 1vw;
+}
+
+footer {
+	width: 100vw;
+	height: 4.5vw;
+	background-color: #ced9e3;
+	margin-top: 5vw;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.15vw;
+	text-align: center;
+	padding-top: 3.5vw;
+	position: relative;
+	bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+	#items {
+		margin-top: 1.5vw;
+		margin-left: 25vw;
+		grid-template-columns: auto auto auto;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#items {
+		margin-top: 2vw;
+		margin-left: 25vw;
+		grid-template-columns: auto auto auto;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#items {
+		margin-top: 2.5vw;
+		margin-left: 35vw;
+		grid-template-columns: auto auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#items {
+		margin-top: 2.5vw;
+		margin-left: 43vw;
+		grid-template-columns: auto;
+	}
+}

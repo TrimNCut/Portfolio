@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(30,30,40);
+    overflow-x: hidden;
+}
+
+.greeting {
+    color: #ffffff;
+    margin-left: 19vw;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20vw;
+    font-size: 3vw;
+    background-color: #015CE0;
+    width: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.name{
+    color: #ffffff;
+    margin-left: 20vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+}
+
+.name label{
+    color: #ffffff;
+    font-family: 'Madimi One', sans-serif;
+    font-size: 1.25vw;
+}
+
+.details{
+    color: #ffffff;
+    margin-left: 20vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75vw;
+}
+
+.small {
+    color: #ffffff;
+    margin-left: 20vw;
+    margin-top: 0.5vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25vw;
+}
+
+.profile-con{
+    background-color: rgb(40, 40, 54);
+    box-shadow: 0vw 0vw 3vw 0.1vw rgba(0, 0, 0, 0.5);
+    width: 15vw;
+    height: 15vw;
+    margin-left: 60vw;
+    margin-top: -10vw;
+    border-radius: 3vw 0vw 3vw 0vw;
+    position: absolute;
+    animation-name: glide;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;    
+    margin-right: 5vw;
+    margin-left: 25vw;
+}
+
+.projects h1{
+    color: #ffffff;
+    margin-left: 20vw;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 22vw;
+    font-size: 3vw;
+}   
+
+.project-con{
+    margin-bottom: 10vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70vw;
+    padding-left: 20vw;
+    padding-top: 5vw;
+}
+
+.project{
+    box-shadow: 0vw 0vw 3vw 0.1vw rgba(0, 0, 0, 0.3);
+    width: 15vw;
+    height: 15vw;
+    background-color: rgb(40, 40, 54);
+    border-radius: 2vw;
+    margin-bottom: 7vw;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    color: #ffffff;
+    font-size: 1.35vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 15vw;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 1.35vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.purple:hover{
+    background-color: rgb(247, 0, 255);
+}
+
+.green:hover{
+    background-color: rgb(21, 255, 0);
+}
+
+.blue:hover{
+    background-color: rgb(0, 140, 255);
+}
+
+.orange:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+@keyframes glide{
+    0% {margin-top: -10vw;}
+    50% {margin-top: -12vw;}
+    100% {margin-top: -10vw;}
+}

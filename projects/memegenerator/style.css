@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "sans-serif", poppins;
+}
+
+.title {
+	text-align: center;
+	color: rgb(51, 153, 255);
+	font-size: 3vw;
+	margin-top: 5vh;
+    margin-bottom: 3vh;
+    -webkit-text-fill-color: rgb(51, 153, 255);
+    -webkit-text-stroke: 0.08vw;
+}
+
+.con {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.user-con {
+    width: 40vw;
+    max-height: 30vw;   
+    display: flex;
+}
+
+#image {
+    background-image: url("https://semantic-ui.com/images/wireframe/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 15vw;
+    margin: 7.5vw 0vw 0vw 2vw;
+    border-radius: 2vw;
+    border: none;
+    vertical-align: middle;
+}
+
+.abovetext-con{
+    margin-top: 0.5vw;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25vw;
+    color: #ffffff;
+}
+
+.belowtext-con{
+    margin-top: 10vw;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25vw;
+    color: #ffffff;
+}
+
+.input-con {
+    max-width: 21vw;
+    display: inline-block;
+    padding-left: 2vw;
+    height: 100%;
+}
+
+input{
+    padding-left: 1vw;
+    border: 0.1vw solid rgb(51, 153, 255);
+    transition: all ease 0.3s;
+    font-family: "sans-serif", poppins;
+    font-size: 0.8vw;
+}
+
+input:focus {
+    box-shadow: 0vw 0vw 0vw 0.2vw rgba(51, 153, 255, 0.4);
+    outline: none;
+}
+
+
+#image-url {
+    width: 18vw;
+    height: 2.5vw;
+    border-radius: 0.75vw;
+    margin-bottom: 8%;
+    margin-top: 7.25vw;
+}
+
+#text1 {
+    width: 12vw;
+    height: 2.5vw;
+    border-radius: 0.75vw 0vw 0vw 0.75vw;  
+    margin-bottom: 8%;
+}
+
+#colour1 {
+    width: 5vw;
+    height: 2.5vw;
+    border-radius: 0vw 0.75vw 0.75vw 0vw;
+    background-color: #ffffff;
+}
+
+#text2 {
+    width: 12vw;
+    height: 2.5vw;
+    border-radius: 0.75vw 0vw 0vw 0.75vw;  
+    margin-bottom: 8%;
+}
+
+#colour2 {
+    width: 5vw;
+    height: 2.5vw;
+    border-radius: 0vw 0.75vw 0.75vw 0vw;
+    background-color: #ffffff;
+}
+
+#generate {
+    width: 19.5vw;
+    height: 2.5vw;
+    border-radius: 0.75vw;
+    border: none;
+    font-size: 0.9vw;
+    font-family: "sans-serif", poppins;
+    color: #ffffff;
+    background-color: rgb(51, 153, 255);
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+#generate:hover {
+    background-color: rgb(44, 132, 219);
+}
+
+.result-con {
+    width: 20vw;
+    height: 30vw;
+}
+
+.sub-title {
+    text-align: center;
+	color: rgb(51, 153, 255);
+	font-size: 2vw;
+    margin-top: 2vw;
+    -webkit-text-fill-color: rgb(51, 153, 255);
+    -webkit-text-stroke: 0.05vw;
+}
+
+#result-image {
+    background-image: url("https://semantic-ui.com/images/wireframe/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 15vw;
+    margin: 2vw 0vw 0vw 2vw;
+    border-radius: 2vw;
+    border: none;
+    vertical-align: middle;
+}

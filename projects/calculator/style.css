@@ -1,0 +1,171 @@
+:root {
+	--blue: #57BCF5;
+	--blue-hover: #4fa6d8;
+	--light-blue: #CEE6F9;
+	--orange: #F58B57;
+	--orange-hover: #d87d4f;
+	--green: #55EC64;
+	--green-hover: #4eca5b;
+	--bg-colour: #ECF7FB;
+	--red: #F55757;
+	--red-hover: #d64c4c;
+	--white: #FFFFFF;
+	--dark-blue: #36444f;
+	--inter: 'Inter', sans-serif;
+	--poppins: 'Poppins', sans-serif;
+}
+
+::-webkit-input-placeholder {
+	color: var(--white);
+	text-align: right;
+}
+
+:-moz-placeholder {
+	color: var(--white);
+	text-align: right;
+}
+
+::-moz-placeholder {
+	color: var(--white);
+	text-align: right;
+}
+
+:-ms-input-placeholder {
+	color: var(--white);
+	text-align: right;
+}
+
+::placeholder {
+	color: var(--white);
+	text-align: right;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--dark-blue);
+}
+
+h1 {
+	color: var(--blue);
+	font-family: var(--poppins);
+	font-size: 3vw;
+	text-align: center;
+	margin-top: 1vw;
+	-webkit-text-stroke: 0.15vw;
+}
+
+.con {
+	background-color: var(--bg-colour);
+	width: max-content;
+	height: max-content;
+	border-radius: 1.5vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2vw;
+}
+
+.result-con {	
+	padding-top: 0.5vw;
+}
+
+#result {
+	width: 19vw;
+	padding: 1vw 1vw 1vw 1vw;
+	background-color: var(--light-blue);
+	border: none;
+	border-radius: 0.5vw;
+	margin-left: 2.5vw;
+	margin-right: 2.5vw;
+	margin-top: 2vw;
+	text-align: right;
+}
+
+#text {
+	color: var(--white);
+	font-size: 2vw;
+	font-family: var(--inter);
+	font-weight: 500;
+	transition: all ease 0.45s;
+}
+
+.btns {
+	margin-left: 2.5vw;
+	margin-top: 2vw;
+	padding-bottom: 1vw;
+}
+
+.sub-con {
+	margin-bottom: 1.5vw;
+}
+
+button {
+	width: 4vw;
+	height: 4vw;
+	background-color: var(--orange);
+	color: var(--white);
+	text-align: center;
+	font-family: var(--inter);
+	font-size: 1.5vw;
+	font-weight: 500;
+	border: none;
+	border-radius: 0.5vw;
+	margin-right: 1.5vw;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+
+button:active {
+	transition: all linear 0.1s;
+}
+
+.sign {
+	background-color: var(--orange);
+}
+
+.sign:hover {
+	background-color: var(--orange-hover);
+}
+
+.sign:active {
+	background-color: var(--orange);
+}
+
+.num {
+	background-color: var(--blue);
+}
+
+.num:hover {
+	background-color: var(--blue-hover);
+}
+
+.num:active {
+	background-color: var(--blue);
+}
+
+#equal {
+	background-color: var(--green);
+}
+
+#equal:hover {
+	background-color: var(--green-hover);
+}
+
+#equal:active {
+	background-color: var(--green);
+}
+
+#clear {
+	background-color: var(--red);
+}
+
+#clear:hover {
+	background-color: var(--red-hover);
+}
+
+#clear:active {
+	background-color: var(--red);
+}

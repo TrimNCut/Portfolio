@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #949CF7;
+}
+
+.title {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 5vw;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke: 0.1vw;
+}
+
+hr {
+    width: 25vw;
+    padding-bottom: 0.5vw;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.2vw;
+    margin-left: 37.5vw;
+}
+
+.todo-con {
+    width: 30vw;
+    background-color: #ffffff;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    border-radius: 3vw;
+    box-shadow: 0vw 0vw 5vw 1vw rgb(190, 148, 247);
+    transition: all ease 0.4s;
+}
+
+.input-task-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+}
+
+#input-task {
+    width: 18vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 3vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9vw;
+    border: 0.1vw solid #949CF7;
+    border-radius: 0.5vw 0vw 0vw 0.5vw;
+    background-color: #ffffff;
+    transition: all ease 0.3s;
+    outline: none;
+}   
+
+#input-task::placeholder {
+    color: #000000;
+}   
+
+#add-task-btn {
+    width: 3vw;
+    border: none;
+    background-color: #9eff7a;
+    height: auto;  
+    border-radius: 0vw 0.5vw 0.5vw 0vw;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+#add-task-btn:hover{
+    box-shadow: 0vw 0vw 0vw 0.2vw #9dff7a5b;
+}
+
+img {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.task-con{
+    width: 100%;
+    height: auto;
+    padding-top: 1.9vw;
+    display: flex;
+    justify-content: center;
+}
+
+.task {
+    width: 23vw;
+    height: 4vw;
+    margin-bottom: 2vw;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.task-details {
+    width: 11vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 1vw;
+    height: 3vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9vw;
+    border: 0.1vw solid #ffffff;
+    border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+    background-color: #ffffff;
+    transition: all ease 0.3s;
+    outline: none;
+    color: #000000;
+}
+
+.task-details::placeholder {
+    color: #000000;
+}
+
+/* Meant to only work when edit button is clicked
+.task-details:hover {
+    color: #000000;
+    border: 0.1vw solid #949CF7;
+    border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+    box-shadow: 0vw 0vw 0vw 0.2vw #949cf75c;
+}
+*/
+
+.task-check{
+    width: 1vw;
+    height: 1vw;
+    outline: none;
+}
+
+.edit-task{
+    margin-left: auto;
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    cursor: pointer;
+    /*margin-right: 0.5vw;*/
+    background-color: #ff9f3f;
+    /*border-radius: 0.5vw 0vw 0vw 0.5vw;*/
+    border-radius: 0vw 0.5vw 0.5vw 0vw;
+    transition: all ease 0.4s;
+    outline: none;
+}
+
+.edit-task:hover{
+    box-shadow: 0vw 0vw 0vw 0.2vw #ffae5d6a;
+}
+
+/*.delete-task{
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    cursor: pointer;
+    background-color: #ff4f4f;
+    border-radius: 0vw 0.5vw 0.5vw 0vw;
+    transition: all ease 0.4s;
+}
+
+.delete-task:hover{
+    box-shadow: 0vw 0vw 0vw 0.2vw #ff5d5d6a;
+}*/
