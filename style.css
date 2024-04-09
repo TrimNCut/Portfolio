@@ -11,9 +11,25 @@ html {
 html::-webkit-scrollbar{
     display: none;
 }
+
 html{
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+nav{
+    width: 100vw;
+    height: 8vw;
+    text-align: center;
+}
+
+nav a{
+    line-height: 8vw;
+    vertical-align: middle;
+    margin: 0vw 5vw 0vw 5vw;
+    text-decoration: none;
+    font-size: 1.25vw;
+    cursor: pointer;
 }
 
 .greeting {
@@ -82,11 +98,29 @@ img {
     margin-left: 25vw;
 }
 
-.projects h1{
+.about h1{
     color: #ffffff;
     margin-left: 20vw;
     font-family: 'Poppins', sans-serif;
     margin-top: 22vw;
+    font-size: 3vw;
+}
+
+.about p{
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 1.75vw;
+    margin-bottom: 1.75vw;
+}
+
+.start {
+    margin-top: 8vw;
+}
+
+.projects h1{
+    color: #ffffff;
+    margin-left: 20vw;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10vw;
     font-size: 3vw;
 }   
 
