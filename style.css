@@ -8,11 +8,10 @@ html {
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar{
+html::-webkit-scrollbar{
     display: none;
 }
-
-body{
+html{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
