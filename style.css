@@ -6,21 +6,23 @@
 html {
     background-color: rgb(30,30,40);
     overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{
     display: none;
 }
 
-html{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 nav{
     width: 100vw;
     height: 8vw;
     text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(30,30,40);
 }
 
 nav a{
@@ -30,6 +32,11 @@ nav a{
     text-decoration: none;
     font-size: 1.25vw;
     cursor: pointer;
+}
+
+#home {
+    top: 0;
+    opacity: 0; 
 }
 
 .greeting {
