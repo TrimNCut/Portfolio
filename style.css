@@ -8,6 +8,15 @@ html {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .greeting {
     color: #ffffff;
     margin-left: 19vw;
