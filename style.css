@@ -241,6 +241,41 @@ a{
     background-color: rgb(255, 166, 0);
 }
 
+.blur1{
+    width:15vw;
+    height:15vw;
+    position: absolute;
+    background-color: rgb(57, 166, 255);
+    margin-left: 10vw;
+    border-radius: 100%;
+    box-shadow: 10px 10px 100px rgb(53, 164, 255);
+    border-style: none;
+    opacity: 0.7;
+    animation-name: swellleft;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: -1;
+}
+
+.blur2{
+    width:15vw;
+    height:15vw;
+    position: absolute;
+    background-color: rgb(57, 166, 255);
+    margin-left: 70vw;
+    margin-top: 2vw;
+    border-radius: 100%;
+    box-shadow: 10px 10px 100px rgb(53, 164, 255);
+    border-style: none;
+    animation-name: swellright;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 @keyframes glide{
     0% {
         margin-top: -18vw;
@@ -254,6 +289,22 @@ a{
         margin-top: -18vw;
         transform: perspective(500px) rotate3d(1, 0, 0, 45deg);
     }
+}
+
+@keyframes swellright{
+    0% {width:15vw;height:15vw;margin-left: 70vw;}
+    25% {width:16vw;height:16vw;margin-left: 68vw;}
+    50% {width:17vw;height:17vw;margin-left: 70vw;}
+    75% {width:16vw;height:16vw;margin-left: 72vw;}
+    100%{width:15vw;height:15vw;margin-left: 70vw;}
+}
+
+@keyframes swellleft{
+    0% {width:15vw;height:15vw;margin-left: 10vw;}
+    25% {width:16vw;height:16vw;margin-left: 8vw;}
+    50% {width:17vw;height:17vw;margin-left: 10vw;}
+    75% {width:16vw;height:16vw;margin-left: 12vw;}
+    100%{width:15vw;height:15vw;margin-left: 10vw;}
 }
 
 /*For Tablets*/
