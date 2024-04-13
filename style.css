@@ -151,6 +151,7 @@ nav a{
     animation-iteration-count: infinite;
     transform: perspective(500px) rotate3d(1, 1, 0, 45deg);
     animation-direction: alternate-reverse;
+    z-index: 2;
 }
 
 img {
