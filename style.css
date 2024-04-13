@@ -79,28 +79,15 @@ nav a{
     font-size: 1.25vw;
 }
 
-.profile-con{
-    background-color: rgb(40, 40, 54);
-    box-shadow: 0vw 0vw 3vw 0.1vw rgba(0, 0, 0, 0.5);
-    width: 15vw;
-    height: 15vw;
-    margin-left: 60vw;
-    margin-top: -10vw;
-    border-radius: 3vw 0vw 3vw 0vw;
-    position: absolute;
-    animation-name: glide;
-    animation-duration: 10s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.further-details{
+    width: 100vw;
+    height: 5vw;
 }
 
 .download {
-    position: absolute;
     margin-left: 20vw;
     margin-top: 2vw;
+    position: absolute;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 0.85vw;
@@ -133,6 +120,37 @@ nav a{
 
 .download:hover{
     background-color: rgb(40, 40, 54);
+}
+
+.discord{
+    position: absolute;
+    margin-top: -2.5vw;
+    margin-left: 7vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+.github{
+    position: absolute;
+    margin-top: -2.5vw;
+    margin-left: 12vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+.image{
+    width: 15vw;
+    height: 17vw;
+    position: absolute;
+    margin-left: 70vw;
+    border-radius: 5vw;
+    cursor: default;
+    animation-name: glide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transform: perspective(500px) rotate3d(1, 1, 0, 45deg);
+    animation-direction: alternate-reverse;
 }
 
 img {
@@ -224,7 +242,110 @@ a{
 }
 
 @keyframes glide{
-    0% {margin-top: -10vw;}
-    50% {margin-top: -12vw;}
-    100% {margin-top: -10vw;}
+    0% {
+        margin-top: -18vw;
+        transform: perspective(500px) rotate3d(1, 1, 0, 45deg); 
+    }
+    50% {
+        margin-top: -16vw;
+        transform: perspective(500px) rotate3d(0, 0, 0, 30deg);
+    }
+    100% {
+        margin-top: -18vw;
+        transform: perspective(500px) rotate3d(1, 0, 0, 45deg);
+    }
+}
+
+/*For Tablets*/
+@media screen and (max-width: 768px) {
+    nav a{
+        font-size: 2vw;
+    }
+    .image{
+        margin-top: -50vw;
+        margin-left: 40vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    .greeting{
+        margin-top: 55vw;
+        font-size: 5vw;
+        margin-left: 46.5vw;
+    }
+    @keyframes glide{
+        0% {
+            margin-top: -60vw;
+            transform: perspective(500px) rotate3d(1, 1, 0, 45deg); 
+        }
+        50% {
+            margin-top: -60vw;
+            transform: perspective(500px) rotate3d(0, 0, 0, 30deg);
+        }
+        100% {
+            margin-top: -60vw;
+            transform: perspective(500px) rotate3d(1, 0, 0, 45deg);
+        }
+    }
+    .name{
+        margin-left: 38vw;
+        margin-top: 3vw;
+        font-size: 3vw;
+    }
+    .name label{
+        font-size: 2vw;
+    }
+    .small{
+        margin-left: 18vw;
+        margin-top: 3vw;
+        font-size: 2.5vw;
+    }
+    .further-details{
+        margin-left: 10vw;
+    }
+    .download{
+        width: 20vw;
+        height: 8vw;
+    }
+    .download label{
+        font-size: 2.25vw;
+        margin-left: -2vw;
+        margin-top: -1.5vw;
+    }
+    .download label img{
+        width: 3.5vw;
+        height: 3.5vw;
+        margin-left: -6vw;
+    }
+    .discord img{
+        width: 5vw;
+        height: 5vw;
+        margin-left: 37vw;
+        margin-top: 6vw;
+    }
+    .github img{
+        width: 5vw;
+        height: 5vw;
+        margin-left: 40vw;
+        margin-top: 6vw;
+    }
+    #about h1{
+        font-size: 5vw;
+        margin-left: 47vw;
+    }
+    #about p{
+        font-size: 3vw;
+        margin-left: 10vw;
+    }
+    .projects h1{
+        font-size: 5vw;
+        margin-left: 40vw;
+    }
+    .project{
+        width: 20vw;
+        height: 20vw;
+    }
+    .project a{
+        font-size: 2vw;
+        margin-top: 4.5vw;
+    }
 }
